@@ -5,6 +5,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
   //this a property, change the word dance to - 'this'
   this.$node = $('<span class="dancer"></span>');
   //part of constructor - when dancer is made, it immedietly steps
+  this.timeBetweenSteps = timeBetweenSteps;
   this.step();
   this.setPosition(top, left);
 
@@ -16,7 +17,7 @@ var Dancer = function(top, left, timeBetweenSteps) {
 Dancer.prototype.step = function() {
   // the basic dancer doesn't do anything interesting at all on each step,
   // it just schedules the next step
-  setTimeout(this.step, timeBetweenSteps);
+  setTimeout(this.step.bind(this), this.timeBetweenSteps);
 };
 
 //part of prototype obj
