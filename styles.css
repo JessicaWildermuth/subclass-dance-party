@@ -25,3 +25,23 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
+.sliding{
+  border:40px solid blue;
+  border-radius: 0px;
+  position: absolute;
+}
+
+.yolodance{
+  border:40px solid green;
+  border-radius: 0px;
+  position: absolute;
+}
+.inLine{
+  bottom: 0%;
+  position: absolute;
+}
+
+
+/*Set the position of div at the bottom of its container can be done using bottom, and position property. Set position value to absolute and bottom value to zero to placed a div at the bottom of container.
+*/

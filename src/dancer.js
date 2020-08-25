@@ -32,6 +32,18 @@ Dancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+//Add Line Up function
+
+Dancer.prototype.lineUp = function(top, left) {
+
+  var styleSettings = {
+    left: left,
+    top: top
+  };
+  this.$node.css(styleSettings);
+  // $('.inLine').append(this.$node);
+};
+
 // now that we have defined the dancer object, we can start setting up important parts of it by calling the methods we wrote
 // this one sets the position to some random default point within the body
 

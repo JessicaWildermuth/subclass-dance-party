@@ -27,7 +27,20 @@ $(document).ready(function() {
       $("body").width() * Math.random(),
       Math.random() * 1000
     );
+    window.dancers.push(dancer);
     $('body').append(dancer.$node);
   });
-});
 
+  $('.lineUpButton').on('click', function(event) {
+    var top = $('body').height() * 0.8;
+    var left = 50;
+    for (var i = 0; i < window.dancers.length; i++) {
+      var dancer = window.dancers[i];
+      // dancer.lineUp(top, left);
+      // line up args = top, left
+      dancer.lineUp(top, left);
+      left += 100;
+    }
+  });
+
+});
