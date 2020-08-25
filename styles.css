@@ -5,9 +5,12 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
-  background-image: url(src/photos/UnderwaterBackground.jpg);
+  background: url(src/photos/UnderwaterBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-repeat: no-repeat
+
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -18,7 +21,6 @@ body, a:link, a:visited, a:active{
   opacity: 100%;
   border:10px;
   border-radius:10px;
-  background: url(src/photos/bubble)
 }
 .topbar{
   height:32px;
@@ -29,29 +31,37 @@ body, a:link, a:visited, a:active{
 }
 .dancer{
   margin: auto;
-  border:10px solid ;
   border-radius:50%;
   position:absolute;
-  background-image: url(src/photos/oatter.jpeg);
-  background-size: 100px 100px;
+  background-size: 120px 120px;
   background-repeat: no-repeat;
 
 }
 
 .sliding{
-  border:40px solid blue;
+  background-image: url(src/photos/clownfish.png);
+  height: 200px;
+  width: 200px;
   border-radius: 0px;
   position: absolute;
+  background-size: 50px 50px
 }
 
 .yolodance{
-  border:40px solid green;
+  background-image: url(src/photos/jellyfish.png);
   border-radius: 0px;
   position: absolute;
+  width: 200px;
+  height: 200px;
 }
 .inLine{
   bottom: 0%;
   position: absolute;
+}
+.blinky{
+  background-image: url(src/photos/oatter.jpeg);
+  height: 110px;
+  width: 100px;
 }
 
 

@@ -14,5 +14,6 @@ SlidingDancer.prototype.step = function() {
 
   Dancer.prototype.step.call(this);
 
-  this.$node.toggle();
+  this.$node.effect('shake');
+  // , '{direction: right, times: 4, distance: 300}', 1000);
 };

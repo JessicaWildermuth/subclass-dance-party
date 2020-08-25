@@ -6,8 +6,8 @@ var Dancer = function(top, left, timeBetweenSteps) {
   this.$node = $('<span class="dancer"></span>');
   //part of constructor - when dancer is made, it immedietly steps
   this.timeBetweenSteps = timeBetweenSteps;
-  this.step();
   this.setPosition(top, left);
+  this.step();
 
   // var dancer = {};
 };
