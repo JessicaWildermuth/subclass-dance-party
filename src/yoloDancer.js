@@ -1,15 +1,15 @@
 //change 'makeBlinkyDancer' to BlinkyDancer classname
-var PracticeDancer = function(top, left, timeBetweenSteps) {
+var YoloDancer = function(top, left, timeBetweenSteps) {
 
   Dancer.call(this, top, left, timeBetweenSteps);
   this.$node.addClass('yolodance');
 
 };
 
-PracticeDancer.prototype = Object.create(Dancer.prototype);
-PracticeDancer.prototype.constructor = PracticeDancer;
+YoloDancer.prototype = Object.create(Dancer.prototype);
+YoloDancer.prototype.constructor = YoloDancer;
 
-PracticeDancer.prototype.step = function() {
+YoloDancer.prototype.step = function() {
   Dancer.prototype.step.call(this);
   // toggle() is a jQuery method to show/hide the <span> tag.
   // See http://api.jquery.com/category/effects/ for this and
