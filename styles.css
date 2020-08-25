@@ -39,7 +39,13 @@ body, a:link, a:visited, a:active{
 
 .sliding{
   background-image: url(src/photos/clownfish.png);
+  height: 200px;
+  width: 200px;
+  border-radius: 0px;
+  position: absolute;
   background-size: 50px 50px;
+  margin: auto;
+  left: 30px;
 }
 
 .yolodance{
@@ -60,6 +66,7 @@ body, a:link, a:visited, a:active{
   width: 100px;
   border-radius: 50%
 }
+
 
 
 
