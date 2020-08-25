@@ -5,6 +5,9 @@ body{
   margin: 0px;
   background-color:#444;
   font-size: 18px;
+  background-image: url(src/photos/UnderwaterBackground.jpg);
+  background-size: cover;
+  background-repeat: no-repeat
 }
 body, a:link, a:visited, a:active{
   color: lightblue;
@@ -12,18 +15,27 @@ body, a:link, a:visited, a:active{
 .title, .addDancerButton{
   padding:5px 12px;
   float:right;
+  opacity: 100%;
+  border:10px;
+  border-radius:10px;
+  background: url(src/photos/bubble)
 }
 .topbar{
   height:32px;
-  background-color: #555;
+  opacity: 100%;
 }
 .title{
-  background-color: #777;
+  opacity: 100%;
 }
 .dancer{
-  border:10px solid red;
-  border-radius:10px;
+  margin: auto;
+  border:10px solid ;
+  border-radius:50%;
   position:absolute;
+  background-image: url(src/photos/oatter.jpeg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+
 }
 
 .sliding{
@@ -41,6 +53,8 @@ body, a:link, a:visited, a:active{
   bottom: 0%;
   position: absolute;
 }
+
+
 
 
 /*Set the position of div at the bottom of its container can be done using bottom, and position property. Set position value to absolute and bottom value to zero to placed a div at the bottom of container.
