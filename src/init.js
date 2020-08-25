@@ -33,7 +33,7 @@ $(document).ready(function() {
 
   $('.lineUpButton').on('click', function(event) {
     var top = $('body').height() * 0.8;
-    var left = 50;
+    var left = 30;
     for (var i = 0; i < window.dancers.length; i++) {
       var dancer = window.dancers[i];
       // dancer.lineUp(top, left);

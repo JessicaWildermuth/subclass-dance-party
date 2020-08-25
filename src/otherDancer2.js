@@ -16,5 +16,11 @@ PracticeDancer.prototype.step = function() {
   // other effects you can use on a jQuery-wrapped html tag.
 
   //change blinkydancer this
-  this.$node.toggle();
+  this.$node.mouseover(function() {
+    $(this).css('background-size', '240px');
+  });
+
+  this.$node.mouseout(function() {
+    $(this).css('background-size', '120px');
+  });
 };
